@@ -4,6 +4,7 @@
   "description": "A mirror with a display backlit into it, powered with a Raspberry Pi",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
