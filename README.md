@@ -1,2 +1,2 @@
-# mirror
+# Raspberry Pi Mirror
 Making a Raspberry Pi mirror as a personal project
