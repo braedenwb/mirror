@@ -1,12 +1,12 @@
-const { app, BrowserWindow } = require('electron/main');
+const { app, BrowserWindow, screen } = require('electron/main');
 
 const createWindow = () => {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600
-  });
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+
+  const win = new BrowserWindow({ width, height });
 
   win.loadFile('index.html');
+  // win.setFullScreen(true); USE WHENEVER READY
 }
 
 app.whenReady().then(() => {
