@@ -1,5 +1,5 @@
 body {
-    color: white;
+    color: hsl(0, 0%, 100%);
     background-color: hsl(0, 0%, 0%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
