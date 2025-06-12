@@ -4,9 +4,7 @@
   "description": "A mirror with a display backlit into it, powered with a Raspberry Pi",
   "main": "src/main.js",
   "scripts": {
-    "build": "tsc",
-    "start": "npm run build && electron ./dist/main.js",
-    "dev": "ts-node src/main.ts",
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +20,6 @@
   "devDependencies": {
     "@types/electron": "^1.4.38",
     "@types/node": "^24.0.1",
-    "electron": "^36.4.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "electron": "^36.4.0"
   }
 }
