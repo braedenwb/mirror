@@ -1,4 +1,4 @@
-import time from './time.js';
+import time from '../utils/time-utils.js';
 
 const clock = document.querySelector('.clock');
 
