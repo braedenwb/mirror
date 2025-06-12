@@ -5,7 +5,10 @@ const createWindow = () => {
 
   const win = new BrowserWindow({ width, height });
 
-  win.loadFile('index.html');
+  win.loadFile('src/index.html');
+  
+  win.maximize();
+  win.removeMenu();
   // win.setFullScreen(true); USE WHENEVER READY
 }
 
