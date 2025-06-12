@@ -9,7 +9,7 @@ const createWindow = () => {
   
   win.maximize();
   win.removeMenu();
-  // win.setFullScreen(true); USE WHENEVER READY
+  // win.setFullScreen(true); /* USE WHENEVER READY */
 }
 
 app.whenReady().then(() => {
