@@ -1,8 +1,13 @@
+/*
+    JS File for getting the current time and updating every second
+*/
+
 export default function time(element)
 {
     function getTime()
     {
         const time = new Date();
+
         let minutes = time.getMinutes().toString().padStart(2, '0');
         let hours = time.getHours();
 

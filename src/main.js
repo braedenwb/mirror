@@ -1,3 +1,5 @@
+// Entrypoint
+
 const { app, BrowserWindow, screen } = require('electron/main');
 
 const createWindow = () => {
@@ -6,7 +8,7 @@ const createWindow = () => {
   const win = new BrowserWindow({ width, height });
 
   win.loadFile('src/index.html');
-  
+
   win.maximize();
   win.removeMenu();
   // win.setFullScreen(true); /* USE WHENEVER READY */
