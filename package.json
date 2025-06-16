@@ -2,6 +2,7 @@
   "name": "mirror",
   "version": "1.0.0",
   "description": "A mirror with a display backlit into it, powered with a Raspberry Pi",
+  "type": "module",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",

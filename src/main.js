@@ -1,6 +1,4 @@
-// Entrypoint
-
-const { app, BrowserWindow, screen } = require('electron/main');
+import { app, BrowserWindow, screen } from 'electron/main';
 
 const createWindow = () => {
   const { width, height } = screen.getPrimaryDisplay().workAreaSize;
@@ -10,7 +8,8 @@ const createWindow = () => {
   win.loadFile('src/index.html');
 
   win.maximize();
-  win.removeMenu();
+
+  win.webContents.openDevTools();
   // win.setFullScreen(true); /* USE WHENEVER READY */
 }
 

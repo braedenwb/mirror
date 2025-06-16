@@ -1,6 +1,67 @@
 body {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 0%);
+    color: hsla(0, 0%, 100%, 0.625);
+    background: hsl(0, 0%, 0%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+    margin: 0px;
+    padding: 50px;
 }
+
+.time {
+    margin-bottom: 50px;
+    font-size: 4rem;
+    color: hsla(0, 0%, 100%, 0.829);
+    font-weight: 500;
+}
+
+.weather-location {
+    font-size: 2rem;
+    color: hsla(0, 0%, 100%, 0.829);
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+    justify-items: center;
+}
+
+.weather-temperature {
+    font-size: 4rem;
+    color: hsla(0, 0%, 100%, 0.827);
+    font-weight: 500;
+}
+
+.weather-description {
+    padding-left: 70px;
+    font-size: 1rem;
+}
+
+.weather-forecast-list {
+    list-style: none;
+    padding-left: 17px;
+}
+
+.weather-forecast-item {
+    display: flex;
+    align-items: center;
+}
+
+.weather-forecast-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.weather-forecast-day {
+    padding-left: 1.5%;
+    width: 100px;
+}
+
+.weather-forecast-temperature {
+    color: hsla(0, 0%, 100%, 0.829);
+    font-weight: 600;
+}
+
+

@@ -1,6 +1,4 @@
-/*
-    JS File for getting the current time and updating every second
-*/
+import config from '../../data/config.js';
 
 export default function time(element)
 {
@@ -11,14 +9,21 @@ export default function time(element)
         let minutes = time.getMinutes().toString().padStart(2, '0');
         let hours = time.getHours();
 
-        if (hours > 12)
+        if (config.militaryTime)
         {
-            hours -= 12;
-            element.textContent = `${hours}:${minutes} PM`;
+            element.textContent = `${hours}:${minutes}`;
         }
         else
         {
-            element.textContent = `${hours}:${minutes} AM`;
+            if (hours > 12)
+            {
+                hours -= 12;
+                element.textContent = `${hours}:${minutes} PM`;
+            }
+            else
+            {
+                element.textContent = `${hours}:${minutes} AM`;
+            }
         }
     }
 
