@@ -13,7 +13,7 @@ body {
     font-weight: 500;
 }
 
-.weather-location {
+.weather-location-name {
     font-size: 2rem;
     color: hsla(0, 0%, 100%, 0.829);
 }

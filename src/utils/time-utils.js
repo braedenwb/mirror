@@ -1,6 +1,6 @@
 import config from '../../data/config.js';
 
-export default function time(element)
+export function time(element)
 {
     function getTime()
     {
@@ -29,4 +29,24 @@ export default function time(element)
 
     getTime();
     return setInterval(getTime, 1000);
+}
+
+export function date(element)
+{
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    function getDate()
+    {
+        const date = new Date();
+        
+        const dayName = date.toLocaleDateString('en-US', { weekday: 'long' });
+        const month = months[date.getMonth()];
+        const day = date.getDate();
+        const year = date.getFullYear();
+
+        element.textContent = `${dayName}, ${month} ${day}, ${year}`;
+    }
+
+    getDate();
+    return setInterval(getDate, 1000);
 }
