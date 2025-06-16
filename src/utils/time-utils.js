@@ -48,5 +48,15 @@ export function date(element)
     }
 
     getDate();
-    return setInterval(getDate, 1000);
+    
+    const now = new Date();
+    const midnight = new Date(now);
+    midnight.setHours(24, 0, 0, 0);
+    
+    const timeUntilMidnight = midnight - now;
+
+    setTimeout(() => {
+        getDate();
+        setInterval(getDate, 86400000);
+    }, timeUntilMidnight);
 }
