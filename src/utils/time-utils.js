@@ -15,10 +15,15 @@ export function time(element)
         }
         else
         {
-            if (hours > 12)
+            if (hours >= 12)
             {
                 hours -= 12;
                 element.textContent = `${hours}:${minutes} PM`;
+            }
+            else if (hours === 0)
+            {
+                hours += 12;
+                element.textContent = `${hours}:${minutes} AM`;
             }
             else
             {
@@ -26,7 +31,6 @@ export function time(element)
             }
         }
     }
-
     getTime();
     return setInterval(getTime, 1000);
 }

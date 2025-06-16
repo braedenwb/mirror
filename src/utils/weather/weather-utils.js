@@ -83,6 +83,7 @@ export default function main()
         weatherLocationName.textContent = weather.name;
         currentWeatherDescription.textContent = weatherCondition.name;
         currentWeatherIcon.src = imgSrc;
+        currentWeatherIcon.removeAttribute('hidden');
 
         weatherForecastList.innerHTML = '';
         for (let i = 0; i < 7; i++)
