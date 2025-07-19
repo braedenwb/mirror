@@ -1,5 +1,5 @@
 export default {
-    name: 'John Doe',
+    name: 'bob',
     militaryTime: false,
     isCelsius: false,
     zipCode: '90001',

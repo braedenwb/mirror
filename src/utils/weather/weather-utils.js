@@ -64,7 +64,7 @@ export default function main()
 {
     async function setWeather()
     {
-        const weather = await getWeather(weatherLocation)
+        const weather = await getWeather(weatherLocation);
         
         const {temperature_2m, weather_code} = weather.current;
         const {weather_code: daily_weather_code, temperature_2m_max, temperature_2m_min, time} = weather.daily;
