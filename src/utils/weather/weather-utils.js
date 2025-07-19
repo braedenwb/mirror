@@ -11,7 +11,7 @@ const weatherForecastList = document.querySelector('.weather-forecast-list');
 
 function getDay(dateString)
 {
-    const date = new Date(dateString);
+    const date = new Date(dateString.replace('-', '/'));
     return date.toLocaleDateString('en-US', { weekday: 'long' });
 }
 

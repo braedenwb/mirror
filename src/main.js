@@ -9,8 +9,8 @@ const createWindow = () => {
 
   win.maximize();
 
-  // win.webContents.openDevTools();
-  win.setFullScreen(true);
+  win.webContents.openDevTools();
+  // win.setFullScreen(true);
 }
 
 app.whenReady().then(() => {
